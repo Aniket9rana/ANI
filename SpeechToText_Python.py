@@ -19,9 +19,9 @@ def Speech_To_Text_Python():
     recognizer.energy_threshold = 40000
     recognizer.dynamic_energy_adjustment_damping = 0.016
     recognizer.dynamic_energy_ratio = 1.0
-    recognizer.pause_threshold = 0.5
+    recognizer.pause_threshold = 0.2
     recognizer.operation_timeout = None
-    recognizer.non_speaking_duration = 0.5
+    recognizer.non_speaking_duration = 0.2
 
     with sr.Microphone() as source:
         recognizer.adjust_for_ambient_noise(source)
