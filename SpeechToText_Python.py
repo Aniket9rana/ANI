@@ -25,7 +25,7 @@ def Speech_To_Text_Python():
 
     with sr.Microphone() as source:
         recognizer.adjust_for_ambient_noise(source)
-        print(Fore.GREEN + "Bolo bhai..", flush=True)
+        print(Fore.GREEN + "listning..", flush=True)
 
         while True:
             try:
@@ -35,6 +35,7 @@ def Speech_To_Text_Python():
                 if recognizer_text:
                     trans_text = Translate_hindi_to_english(recognizer_text)
                     print("\r" + Fore.BLUE + "Ani : " + trans_text)
+                    return trans_text
 
                 else:
                    continue
