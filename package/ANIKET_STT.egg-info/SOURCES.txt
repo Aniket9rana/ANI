@@ -1,0 +1,6 @@
+setup.py
+ANIKET_STT.egg-info/PKG-INFO
+ANIKET_STT.egg-info/SOURCES.txt
+ANIKET_STT.egg-info/dependency_links.txt
+ANIKET_STT.egg-info/top_level.txt
+ANI_STT/__init__.py
